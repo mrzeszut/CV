@@ -1,0 +1,778 @@
+---
+title: Untitled
+format:
+  modern2-cv-pdf: default
+author: Mateusz Rzeszutek
+cvfont: raleway #texlive fonts like raleway,fetamont,gillius,comfortaa
+cvcolor: 
+  main: B83B5E
+  accent: 6A2C70
+jobtitle: Research Assistant "AGH University"
+sidebar:
+  image: portret.jpg
+  bullets:
+    - Krakow, Poland
+    - polish
+  sections: 
+    - name: Skills
+      items:
+        - text: Air quality modeling
+          exp: 
+            text: "12 years"
+            num: 1.0
+        - text: Air quality monitoring
+          exp: 
+            text: "12 years"
+            num: 1.0
+        - text: R for Data Science
+          exp: 
+            text: "8 years"
+            num: 0.65
+        - text: Programming R
+          exp: 
+            text: "6 years"
+            num: 0.5
+        - text: Geographic Information System
+          exp: 
+            text: "10 years"
+            num: 0.85
+        - text: Project management
+          exp: 
+            text: "5 years"
+            num: 0.4
+        - text: Data sharing in projects
+          exp: 
+            text: "12 years"
+            num: 1.0
+        - text: Computer-Aided Design
+          exp: 
+            text: "10 years"
+            num: 0.85
+    - name: Contact
+      items:
+        - icon: map-marker
+          text: Krakow, Poland
+        - icon: phone
+          text: "+48 12 617 39 31"
+        - icon: envelope
+          text: rzeszut@agh.edu.pl
+        - icon: home
+          text: my website (polish)
+          href: https://home.agh.edu.pl/~rzeszut
+        - icon: github
+          text: mrzeszut
+          href: https://https://github.com/mrzeszut
+        - icon: orcid
+          text: orcid
+          href: https://orcid.org/0000-0002-0488-4435
+    - name: Develop tools
+      items:
+        - R
+        - RStudio
+        - Quarto
+        - Git
+        - Fortran
+        - Overleaf
+    - name: AQM tools
+      items:
+        - CALMET/CALPUFF
+        - AERMET/AERMOD
+        - OSPM
+        - HYSPLIT
+        - CALINE
+        - COPERT
+    - name: Tools (advanced)
+      items:  
+        - ArcGIS
+        - AutoCaD
+        - MS Office 365 and Taems
+    - name: Tools (basic)
+      items:
+        - MS project and Visio
+        - GitKraken
+        - VS Code
+        - Python
+        - Inkscape
+        - Linux
+        - QGIS
+    - name: Hobby
+      items:
+        - Active - Cycling, Mountain and photography 
+        - Resting - Football, Movie, Serials, Theater
+execute: 
+  echo: false
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r}
+#| label: cvevents
+cvevents <- function(tbl, when, what, where, descr) {
+
+    command_start <- "\\cvevent"
+    tbl[[where]] <- gsub("\n", " \\\\newline ", tbl[[where]])
+    res <- paste0(
+        command_start, "{", tbl[[when]], "}", 
+        "{", tbl[[what]], "}",
+        "{", tbl[[where]], "}",
+        "{", tbl[[descr]], "}"
+        )
+
+    cat(res, sep = "\n\n\n")
+}
+
+cvproj <- function(tbl,what,role,items){
+    command_start <- "\\cvproj"
+    res <- paste0(
+        command_start, "{", tbl[[what]], "}",
+        "{", tbl[[role]], "}",
+        "{", sapply(tbl[[items]], function(x)paste0(x,collapse = ", ")), "}"
+    )
+
+    cat(res, sep = "\n\n\n")
+}
+```
+
+# Summary
+
+I am a scientist who wants to learn and discover the processes and phenomena of the earth's atmosphere. Air is one of the basic components of the environment, without which there is no life on earth. 5 minutes without oxygen causes irreversible changes in our brain, so I believe that my area of interest is very important. I hope that my work will contribute to the understanding of a small part of the surrounding world. It will allow to plan effective air protection engineering activities.\
+\
+
+**Major Research Topics:**
+
+-   **Parameterization and accuracy assessment of air quality modeling systems** - My research will allow the effective use of these techniques for regulatory purposes.
+
+-   **Analysis of air quality monitoring system data** - I am developing and testing different methods to identify how individual factors determine air quality.
+
+-   **Air quality monitoring** - I am working on calibration algorithms for low-cost particulate matter sensors that will be robust to changing locations.
+
+-   **Creating tools for environmental engineers in R** - In my free time, I create the *"mpsenvi"* package that will perform accuracy assessment, data preparation, modeling, and visualization of results from air quality models.
+
+# Education
+
+```{r}
+#| label: Education
+#| output: asis
+tibble::tribble(
+    ~role, ~institution, ~dates, ~details,
+
+"Ph.D.", 
+"AGH University of Krakow; Faculty of Geo-Data Science, Geodesy and Environmental Engineering", 
+"08/03/2019", 
+"Optimization of input settings of selected air pollution dispersion modeling systems in near-field.",
+    
+"M.Sc.",
+"AGH University of Krakow; Faculty of Geo-Data Science, Geodesy and Environmental Engineering", 
+"22/10/2013", 
+"Air quality impact assessment of Industrial Plant of Thermic Waste Processing Technology in Kracow using mathematical dispersion model CALPUFF.",
+    
+"Eng.", 
+"AGH University of Krakow; Faculty of Geo-Data Science, Geodesy and Environmental Engineering", 
+"31/01/2012", 
+"Emitter geometry optimization (in a select range)",
+) |>
+    cvevents(when = "dates", what = "role", where = "institution", descr = "details")
+```
+
+# Employment
+
+```{r}
+#| label: Employment
+#| output: asis
+tibble::tribble(
+    ~role, ~institution, ~dates, ~details,
+
+"Research Assistant", 
+"AGH University of Krakow; Faculty of Geo-Data Science, Geodesy and Environmental Engineering", 
+"10/2019 - present", 
+"",
+    
+"Assistant Professor",
+"AGH University of Krakow; Faculty of Geo-Data Science, Geodesy and Environmental Engineering", 
+"10/2015 - 09/2019", 
+"",
+
+) |>
+    cvevents(when = "dates", what = "role", where = "institution", descr = "details")
+```
+
+# Internships
+
+```{r}
+#| label: Internships
+#| output: asis
+tibble::tribble(
+    ~role, ~institution, ~dates, ~details,
+    
+"Research internship", 
+"Municipal Cleaning Company in Krakow, Poland", 
+"August 2019",
+"Development of assumptions for research work on secondary dust emissions from roads. Recognition of existing street cleaning technologies.  Optimization of the street cleaning process with relation to secondary dust pollutant unos.",
+
+"Traineeship",
+"Installations Sylwester Kocik",
+"2012 - 2013",
+"Planning and implementation of sanitary installations (plumbing, heating, ventilation). Preparation of as-built documentation. Preparation of cost estimates. Supervision of technical staff.",  
+
+"Summer internship",
+"Summer school of geoinformation - GEOGORCE, Gorce, Poland", 
+"may 2012",
+"Courses and workshops in ArcGIS, Remote Sensing, ENVI and TOPR.",
+
+"Traineeship", 
+"Environmental Protection Inspectorate in Krakow, Poland", 
+"april 2011",
+"Air quality monitoring, monitoring methods, maintenance and operation of measuring equipment, validation of measurement results.",
+    
+"Traineeship", 
+"Emipro limited liability company, Poland",
+"July 2010",
+"Measurement of air pollution emissions, performance of measurements in industrial plants, performance of determinations in the laboratory, preparation of documentation.",
+
+) |>
+    cvevents(when = "dates", what = "role", where = "institution", descr = "details")
+```
+
+# Scientific projects
+
+```{r}
+#| label: Scientific projects and grants
+#| output: asis
+tibble::tribble(
+    ~role, ~institution, ~dates, ~details,
+
+"Team member",
+"National Center for Research and Development",
+"2023 - 2025",
+"Energy Transformation Observatory as an instrument to support the socio-economic development of Poland - OTE. Grant no. GOSPOSTRATEG9/000D/2022", 
+
+"Leader",
+"Excellence Initiative – Research University",
+"2022 - 2025",
+"Development and preparation of a course for the most talented students entitled: Remote Repositories and Version Control Systems in Machine Learning projects. Grant application no. 7434",
+
+"Team member",
+"Excellence Initiative – Research University",
+"2020 - 2022", 
+"Analysis of the fractional and elemental composition of dusts in an urban agglomeration and suburban areas along roads - mobile, stationary and model studies. Grant application no. 67", 
+
+"Team member",
+"National Center for Research and Development",
+"2019 - 2022",
+"Development of distributed energy in energy clusters - KlastER. Grant no. Gospostrateg1/385085/21/NCBR/19", 
+
+"Principal Investigator",
+"Ministry of Science and Higher Education",
+"2017", 
+"Assessment of the possibility of improving the prognostic effectiveness of the OSPM model by taking into account secondary dust emissions from roads. Grant no. 15.11.150.277",   
+
+"Principal Investigator",
+"Ministry of Science and Higher Education",
+"2016",
+"Assessment of the implementation of the OSPM model in the air quality management system in Krakow, Grant no. 15.11.150.395", 
+
+"Principal Investigator",
+"Ministry of Science and Higher Education grant",
+"2014",
+"Modeling of pollutants in the atmospheric air, Grant no. 15.11.150.462", 
+
+) |>
+    cvevents(when = "dates", what = "role", where = "institution", descr = "details")
+
+```
+
+# Projects for industry
+
+```{r}
+#| label: Industry
+#| output: asis
+tibble::tribble(
+    ~role, ~institution, ~dates, ~details,
+
+"Team member",
+"Report for Zinc smelter in a Silesian town",
+"2021 - 2022",
+"Monitoring size and dynamics of the deposition pollutants in the forest ecosystem in the plant zone. Report no. CI-UR/U/7/2020",
+
+"Team member",
+"Report for the Municipal Cleaning Company in Krakow",
+"2016",
+"Determination of the emission factors of PM10 and PM2.5 dust suspended in the air from selected streets in Krakow. Report no. 5.5.150.370.",
+
+"Team member",
+"Report for SGL Carbon Poland",
+"2014",
+"Preparation of an integrated application permit for SGL Carbon Poland. Report no. 5.5.150.213",
+
+) |>
+    cvevents(when = "dates", what = "role", where = "institution", descr = "details")
+```
+
+# Projects for self-government administration
+
+```{r}
+#| label: Administration
+#| output: asis
+tibble::tribble(
+    ~role, ~institution, ~dates, ~details,
+
+"Principal Investigator",
+"Report for the Office City of Zielona Gora",
+"09/2023 - 12/2023",
+"Expert opinion on the spread of a cloud of pollution from a fire of hazardous waste stored in a hall in Zielona Gora. Report no. 25.25.150.682", 
+
+"Leader",
+"Report for the Office City of Krakow",
+"07/2019 - 12/2019",
+"Assessment of the impact of repair activities on air quality in Krakow. Report no. 25.25.150.561", 
+
+"Team member",
+"Report for the Office City of Krakow",
+"07/2019 - 12/2019",
+"Assessment of the effects of improving air quality in Krakow by introducing changes in traffic organization on the example of selected street canyons - preliminary studies. Report no. 25.25.150.571",
+
+) |>
+    cvevents(when = "dates", what = "role", where = "institution", descr = "details")
+
+```
+
+# R and fortran projects
+
+I invite you to visit my profile [**mrzeszutek**](https://github.com/mrzeszut) on the GitHub platform. There you can find my current scientific and teaching projects.\
+
+```{r}
+#| label: develop
+#| output: asis
+tibble::tribble(
+    ~what, ~role, ~items,
+    
+"giosmport",
+"R package",
+c("Data import package from the air quality monitoring system in Poland."),
+    
+"animeTraj",
+"R function",
+c("Tutorial on creating trajectory animations from the Hysplit model."),
+    
+"sdp",
+"Course",
+c("Scripted Data Processing (sdp). A course on effective data processing and basic programming in R - R, Rstudio, Quarto, Tidyverse."),
+    
+"rrvcsml",
+"Course",
+c("Remote Repositories and Version Control Systems for Machine Learning projects. Course for the best students of AGH university of Krakow. Funded by the Excellence Initiative – Research University. The aim of the course is to introduce students to the world of data science and develop good practices in working with multidisciplinary teams on machine learning projects - R, RStudio, Git, Github, GitKraken, Quarto, Tidyverse, Tidymodels."),
+    
+"Fortran",
+"Simple programs",
+c("Several data preparation programs for CALMET/CALPUFF (test versions). A simple implementation of the reference methodology for assessing the impact on air quality (Gaussian plume model) was developed, which allows the implementation of data in the form of time series."),
+    
+) |>
+    cvproj(what = "what", role = "role", items = "items")
+```
+
+# Certificated courses and training
+
+```{r}
+#| label: Certificat
+#| output: asis
+tibble::tribble(
+    ~role, ~institution, ~dates, ~details,
+
+    
+"Introduction to LaTeX in Overleaf",
+"FACH Sp. z o.o. - organized by the Center of IT Promotion", 
+"19/11/2023 (14h)", 
+"",
+
+"CFD in ANSYS",
+"MESco Sp. z o.o. - ANSYS Certified Elite Channel Partner", 
+"23/09/2022 (96h)", 
+"",
+
+"Machine Learning Workshops in R",
+"LabMasters", 
+"29/03/2019 (90h)", 
+"",   
+    
+"Data analysis and visualization in R",
+"LabMasters", 
+"18/10/2018 (30h)", 
+"",   
+    
+"Fundamentals of mathematical statistics in R",
+"LabMasters", 
+"18/10/2018 (30h)", 
+"",    
+    
+"Using remote techniques in teaching",
+"The Centre of e-Learning and Innovative Education at AGH University at AGH University", 
+"21/06/2016 (20h)", 
+"No. CEL/160621/PO481",
+    
+    
+"Workshops on the efficient use of the Zeus supercomputer",
+"Academic Computer Centre CYFRONET AGH", 
+"25/05/2016 (10h)", 
+"",
+
+"Linux Basics Workshop",
+"Academic Computer Centre CYFRONET AGH", 
+"20/03/2015 (10h)", 
+"",    
+    
+"Didactic Improvement Course",
+"AGH University, Faculty of Humanities", 
+"09/06/2014 (75h)", 
+"",
+
+    
+"ArcGIS Desktop - spatial analyses",
+"Esri Polska Sp. z o.o.", 
+"30/08/2012 (8h)", 
+"Geoinformation summer school GEOGORCE",
+
+    
+"Introduction to ArcGIS Desktop",
+"Esri Polska Sp. z o.o.", 
+"27/08/2012 (8h)", 
+"Geoinformation summer school GEOGORCE",
+
+
+"Auditor ISO 9001:2009, ISO14001:2005, PN-N-18001:2004, OHAS 18001:2007", 
+"MDG Doradztwo Gospodarcze sp. z o.o.", 
+"08/03/2013 (30h)", 
+"registry number: MDG-Z-2013/03/51",
+
+"Project management basics", 
+"PM sp. z o.o.", 
+"23/11/2011 (8h)", 
+"no. certificate: 2011-11-65",
+
+"AutoCad 2011 3D models", 
+"CAD Consult - authorized training center Autodesk®", 
+"03/04/2011 (30h)", 
+"no. certificate: 1935NEUWFO",
+
+"AutoCad 2011 advanced", 
+"CAD Consult - authorized training center Autodesk®", 
+"12/12/2010 (30h)", 
+"no. certificate: 1530886753",
+
+"AutoCad 2011 Beginning", 
+"CAD Consult - authorized training center Autodesk®", 
+"05/12/2010 (30h)", 
+"no. certificate: 1RRIOWPDCU",
+
+) |>
+    cvevents(when = "dates", what = "role", where = "institution", descr = "details")
+```
+
+# Prizes and awards
+
+```{r}
+#| label: Prizes and awards
+#| output: asis
+tibble::tribble(
+    ~role, ~institution, ~dates, ~details,
+
+"Team 3nd degree Rector's Award for educational achievements", 
+"AGH University of Krakow",
+"2022",
+"",
+
+"Individual 1st degree Rector's Award for scientific achievements",
+"AGH University of Krakow",
+"2021",
+"",
+
+"Individual 3nd degree Rector's Award for scientific achievements", 
+"AGH University of Krakow",
+"2020",
+"",
+
+"Individual 3nd degree Rector's Award for scientific achievements",
+"AGH University of Krakow",
+"2019",
+"",
+
+"Team 3nd degree Rector's Award for organizational achievements", 
+"AGH University of Krakow",
+"2019",
+"",
+
+"Team 1st degree Rector's Award for educational achievements",
+"AGH University of Krakow",
+"2018",
+"",
+
+"Distinctions a master's thesis",
+"Krakow City Awards",
+"2014",
+"",
+
+"1st degree award for the best master's thesis",
+"Good Network Foundation", 
+"2014",
+"",
+
+"Winner of the third place for the best master's thesis",
+"AGH Diamonds, XV edition", 
+"2014",
+"",
+
+) |>
+    cvevents(when = "dates", what = "role", where = "institution", descr = "details")
+```
+
+# Scholarship
+
+```{r}
+#| label:  Scholarship
+#| output: asis
+tibble::tribble(
+    ~role, ~institution, ~dates, ~details,
+
+"Basic, pro-quality and scientific scholarship for PhD students awarded annually.",
+"AGH University of Krakow",
+"10/2013 - 10/2018",
+"",
+
+"Scholarship for the best environmental engineering students awarded annually.",
+"Human Capital Operational Program (POKL) from the European Social Fund (ESF)", 
+"2012 - 2013",
+"",
+
+"Scholarship for the best environmental engineering students awarded annually.",
+"AGH University of Krakow",
+"2008 - 2013",
+"",
+
+) |>
+    cvevents(when = "dates", what = "role", where = "institution", descr = "details")
+```
+
+# Publications
+
+You can find a full list of my scientific publications at [**ORCID**](https://orcid.org/0000-0002-0488-4435) and [**BPP AGH**](https://bpp.agh.edu.pl/autor/rzeszutek-mateusz-09820).  I encourage you to browse my profile on [**researchgate**](https://www.researchgate.net/profile/Mateusz-Rzeszutek-2) and [**Scopus**](https://www.scopus.com/authid/detail.uri?authorId=57193075220).\
+
+Below are some publications, cited at least 10 times by Scopus.\
+
+```{r}
+#| label: publications
+#| output: asis
+tibble::tribble(
+    ~what, ~role, ~items,
+
+"Rzeszutek, M.",
+"Science of the Total Environment, 2019, 689, pp. 31–46",
+c("Parameterization and evaluation of the CALMET/CALPUFF model system in near-field and complex terrain - Terrain data, grid resolution and terrain adjustment method"),
+
+"Rzeszutek, M., Bogacki, M., Bździuch, P., Szulecka, A.",
+"Transportation Research Part D: Transport and Environment, 2019, 68, pp. 137–149",
+c("Improvement assessment of the OSPM model performance by considering the secondary road dust emissions"),
+
+"Bogacki, M., Mazur, M., Oleniacz, R., Rzeszutek, M., Szulecka, A.",
+"E3S Web of Conferences, 2018, 28, 01003",
+c("Re-entrained road dust PM10 emission from selected streets of Krakow and its impact on air quality"),
+
+"Szulecka, A., Oleniacz, R., Rzeszutek, M.",
+"Environmental Protection and Natural Resources, 2017, 28(2), pp. 22–27",
+c("Functionality of openair package in air pollution assessment and modeling - A case study of Krakow"),
+
+"Oleniacz, R., Rzeszutek, M.",
+"Applied Sciences (Switzerland), 2018, 8(11), 2301",
+c("Intercomparison of the CALMET/CALPUFF modeling system for selected horizontal grid resolutions at a local scale: A case study of the MSWI Plant in Krakow, Poland"),
+
+"Rzeszutek, M., Szulecka, A., Oleniacz, R., Bogacki, M.",
+"E3S Web of Conferences, 2017, 22, 00149",
+c("Assessment of the AERMOD dispersion model over complex terrain with different types of meteorological data: Tracy Power Plant experiment")
+
+) |>
+    cvproj(what = "what", role = "role", items = "items")
+```
+
+# Conferences
+
+-   2013, XI Konferencja Naukowa „Dla Miasta i Środowiska - Problemy unieszkodliwiania odpadów”, Polska, Warszawa, Prezentacja pt. *„Zakład Termicznego Przekształcania Odpadów Komunalnych w Krakowie – założenia projektowe i stan realizacji budowy”*
+
+-   2013, Ogólnopolska Konferencja „Darmowe dane i open source w badaniach środowiska”, Polska, Kraków, Prezentacja pt. *„Przygotowanie danych przestrzennych na potrzeby modelowania rozprzestrzeniania się zanieczyszczeń w powietrzu z wykorzystaniem modelu CALMET/CALPUFF”*
+
+-   2014, IV International Conference of Science and Technology **INFRAEKO** – Infrastructure and Environment, Poland, Krakow, Presentation: *„The example of assessment of ambient air pollution changes resulting from the thermomodernization of single-family buildings”*
+
+-   2014, XII Konferencja Naukowa „Ochrona Powietrza Atmosferycznego” **POL-EMIS**,Polska, Karpacz. Prezentacja pt. *„Ocena wpływu nowo budowanej spalarni odpadów komunalnych w Krakowie na jakość powietrza z wykorzystaniem modelu CALMET/CALPUFF”*
+
+-   2014, 10th Scientific Conference Air Protection in Theory and Practice, Poland, Zakopane, Presentation: *„Assessment of the impact of computational grid on the results of modeling pollutant spreading in the air”*
+
+-   2014, International IX Krakow Conference of young scientists, Poland, Krakow. Presentation: *“Impact assessment of road transport on air in the selected area of Krakow”*
+
+-   2014, Konferencja młodych naukowców: Wpływ młodych naukowców na osiągnięcia polskiej nauki VII edycja, Polska, Kraków. Prezentacja pt. *„Zastosowanie systemu informacji przestrzennej w modelowaniu dyspersji zanieczyszczeń w powietrzu atmosferycznym”*
+
+-   2015, Konferencja naukowa „Nauka i biznes, czyli dwa przenikające się światy”, Polska, Katowice. Prezentacja pt. *„Obliczenia rozprzestrzeniania się pyłu drobnego w powietrzu atmosferycznym z wykorzystaniem dyfuzyjnych modeli Gaussa”*
+
+-   2015, 9 Krakowskie Sympozjum Naukowo Techniczne **KraSyNT**, Polska, Wieliczka. Prezentacja pt.: *„Wpływ dużych instalacji energetycznego spalania paliw na jakość powietrza w Krakowie”*
+
+-   2015, International X Krakow conference of young scientists, Poland, Zakopane, Presentation: *„Model of averaging traffic flow variability profiles based on the example of selected streets in krakow”*
+
+-   2015, The 24th annual Central European Conference **ECOpole’15**, Poland, 2015, Polska, Jarnoltowek, Poster pt.: *„Chemical transformation modules for secondary inorganic aerosol formation in the CALPUFF model and their importance in the air quality impact assessment”*
+
+-   2016, International Conference on the Sustainable Energy and Environment Development **SEED**, 2016, Krakow, Poland. Poster pt.: *„Impact of a coal-fired CHP plant without flue gas desulfurization (FGD) system on secondary inorganic aerosol formation in air”*
+
+-   2016, V International Conference of Science and Technology **INFRAEKO**: Modern Cities. Infrastructure and Environment, Presentation: *„Modelling of air pollutant dispersion in the street canyon”*
+
+-   2016, XIII Konferencja Naukowa **POL-EMIS**, Powietrze Atmosferyczne Jakość – Zagrożenia-Ochrona, Polska, Szklarska Poręba. *„Zastosowanie systemu modelowania AERMOD w obliczeniach dyspersji zanieczyszczeń powietrza w warunkach polskich”*
+
+-   2016, Konferncja naukowa TranSopot 2016 – Wyzwania rozwoju transportu w XXI wieku, Sopot, Prezentacja pt.: *„Ocena jakości powietrza w pobliżu tras komunikacyjnych dla wybranych aglomeracji miejskich Polski”*
+
+-   2016, V Ogólnopolski Kongres Inżynierii Środowiska, Polska, Lublin, Prezentacja pt.: *„Ocena modelu dyspersji zanieczyszczeń powietrza OSPM: studium przypadku, Polska, Kraków”*
+
+-   2017, **ASEE17**: International conference on Advances in energy Systems and Environmental Engineering: clean energy, clean water, clean air, Wroclaw, Poland. Presentation: *“Assessment of the AERMOD dispersion model over complex terrain with different types of meteorological data: Tracy Power Plant experiment”*
+
+-   2017, International conference **ASSM2017**, Poland, Częstochowa. Presentation: “*Evaluation of opportunities for improvement of OSPM model performance by considering secondary dust emissions from roads”*
+
+-   2019, 3rd International Conference on the Sustainable Energy and Environmental Development **SEED2019**, Poster: *„Assessment of the AERMOD dispersion model in complex terrain with different types of digital elevation data”*
+
+-   2022, 10th Scientific Conference Air Protection in Theory and Practice, Poland, Zakopane, Presentation: *„Particle matter trends (PM10 and PM2.5) from road transport in Krakow: A street canyon case study av. Krasinski”*
+
+-   2023, 4th Symposium „Air quality and health”, Poland, University of Wrocław, Presentation: *„Using meteorological normalization to identify the effects of reducing air pollution emissions in Krakow“*
+
+# Reviewer
+
+-   Applied sciences (2),
+
+-   Atmosphere (5),
+
+-   Archives of Environmental Protection (1),
+
+-   Electric power components and systems (1),
+
+-   Environmental science (2),
+
+-   Environments (1),
+
+-   Geomatics and Environmental Engineering (1),
+
+-   Science of the total environment (3),
+
+-   Sustainability (2),
+
+-   Toxics (2),
+
+-   Urban science (2),
+
+-   Environmental Sciences Europe (1).
+
+# Teaching and training
+
+I teach or have taught in 4 academic courses, i.e. Environmental Engineering and Monitoring, Geoinformatics, Geospatial Informatics, and Industrial Process Engineering and Management.\
+
+**Environmental Engineering:**
+
+-   Air Protection Engineering (P)
+
+-   Information Technology (P)
+
+-   Automation of data processing and visualization (P)
+
+-   Environmental Monitoring (P)
+
+-   Atmospheric physics with meteorology and climatology (P)
+
+-   GIS in Environmental Engineering (P)
+
+-   Extraordinary Environmental Hazards (F)
+
+-   R package in environmental data analysis (F)
+
+-   Machine learning in air protection (F)
+
+-   Shaping the Areosanitary Condition and Acoustic Climate (S)
+
+-   Municipal Energy and Energy Auditing (S)
+
+-   Emission Control and Air Quality Assessment (S)
+
+-   Low-Carbon Mobility (S)
+
+-   Air Quality Management (S)
+
+-   Atmospheric Protection Systems and Techniques (S)
+
+-   Waste Gas Treatment and Monitoring (S)
+
+-   Information and Environmental Management (S)
+
+**Geoinformation**
+
+-   Scripted Data Processing (P)
+
+-   Fundamentals of Earth Sciences (P)
+
+-   Environmental data processing (P)
+
+-   Methods of environmental research and analysis (P)
+
+-   Emission inventory and estimation methods (F)
+
+-   Introduction to air pollution dispersion modeling (F)
+
+**Geospatial Informatics**
+
+-   Scripted Data Processing (P)
+
+-   Time Series (P)
+
+-   Remote Repositories and Version Control Systems (F)
+
+-   Creating Functionality of Scripting Languages (F)
+
+-   Applications of Copernicus Program Data (F)
+
+-   Machine Learning in Environmental Engineering (F)
+
+-   Air Quality Modeling (F)
+
+-   Esplorative Model Analysis (F)
+
+**Other items**
+
+-   Data mining (S)
+
+-   Modern R for Data Science (F)
+
+-   Remote Repositories and Version Control Systems in Machine Learning Projects.
+
+**Other didactic**
+
+-   Dissertation Co-Advisor, Doctoral Dissertation entitled: "Modeling of biogenic volatile organic compounds emissions from forest areas in Poland - Adriana Kłosowska", AGH University of Krakow (2017 - 2022)
+
+-   Supervisor of students of Environmental Engineering and Geoinformation (2017 - present)
+
+-   Supervisor of the students' science club "KNIOP" (2016 - 2019)
+
+-   Member of two committees for the creation of a new study program "Geoinformation" (2018 - 2022)
+
+-   Member of two committees for the creation of a new study program "Geospatial informatics" (2021 - 2023)
+
+-   supervisor of the Environmental Information Modeling specialization in the field of Geoinformation (2021-preset)
+
+# Others
+
+-   Member of the faculty accreditation committee (2016)
+
+-   Member of the committee for the engineering exam (2016 - 2019)
+
+-   Member of the college admissions committee (2016 - 2019)
+
+-   Member of the interdepartmental team of AGH for the Environment (2020 - 2021)
+
+-   Environmental expert at ABAN Ltd. in Cracow (2023 - present)
+
+-   Member of the faculty team preparing an application for the Operational Program Knowledge Education Development (POWER-1, 2018)
+
+-   Member of the departmental team preparing an application for the Operational Program Knowledge Education Development (POWER-2, 2019)
+
+-   Member of the team coordinating activities for the Operational Program Knowledge Education Development (2018 - 2021)
+
+-   Implementation of departmental promotion activities (survey reports, 2023 - present).
+
+-   Development and preparation of selected tasks for the application for European Funds for Social Development (first and second edition)

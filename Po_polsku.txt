@@ -1,0 +1,140 @@
+
+# Conferences
+
+ - 2013, XI Konferencja Naukowa „Dla Miasta i Środowiska - Problemy unieszkodliwiania odpadów”, Polska, Warszawa, Prezentacja pt. *„Zakład Termicznego Przekształcania Odpadów Komunalnych w Krakowie – założenia projektowe i stan realizacji budowy”*
+ - 2013, Ogólnopolska Konferencja „Darmowe dane i open source w badaniach środowiska”, Polska, Kraków, Prezentacja pt. *„Przygotowanie danych przestrzennych na potrzeby modelowania rozprzestrzeniania się zanieczyszczeń w powietrzu z wykorzystaniem modelu CALMET/CALPUFF”*
+ - 2014, IV International Conference of Science and Technology **INFRAEKO** – Infrastructure and Environment, Poland, Krakow, Presentation: *„The example of assessment of ambient air pollution changes resulting from the thermomodernization of single-family buildings”*
+- 2014, XII Konferencja Naukowa „Ochrona Powietrza Atmosferycznego” **POL-EMIS**,Polska, Karpacz. Prezentacja pt. *„Ocena wpływu nowo budowanej spalarni odpadów komunalnych w Krakowie na jakość powietrza z wykorzystaniem modelu CALMET/CALPUFF”*
+ - 2014, 10th Scientific Conference Air Protection in Theory and Practice, Poland, Zakopane, Presentation: *„Assessment of the impact of computational grid on the results of modeling pollutant spreading in the air”*
+ - 2014, International IX Krakow Conference of young scientists, Poland, Krakow. Presentation: *“Impact assessment of road transport on air in the selected area of Krakow”*
+ - 2014, Konferencja młodych naukowców: Wpływ młodych naukowców na osiągnięcia polskiej nauki VII edycja, Polska, Kraków. Prezentacja pt. *„Zastosowanie systemu informacji przestrzennej w modelowaniu dyspersji zanieczyszczeń w powietrzu atmosferycznym”*
+ - 2015, Konferencja naukowa „Nauka i biznes, czyli dwa przenikające się światy”, Polska, Katowice. Prezentacja pt. *„Obliczenia rozprzestrzeniania się pyłu drobnego w powietrzu atmosferycznym z wykorzystaniem dyfuzyjnych modeli Gaussa”*
+ - 2015, 9 Krakowskie Sympozjum Naukowo Techniczne **KraSyNT**, Polska, Wieliczka. Prezentacja pt.: *„Wpływ dużych instalacji energetycznego spalania paliw na jakość powietrza w Krakowie”*
+ - 2015, International X Krakow conference of young scientists, Poland, Zakopane, Presentation: *„Model of averaging traffic flow variability profiles based on the example of selected streets in krakow”*
+ - 2015, The 24th annual Central European Conference **ECOpole’15**, Poland, 2015, Polska, Jarnoltowek, Poster pt.: *„Chemical transformation modules for secondary inorganic aerosol formation in the CALPUFF model and their importance in the air quality impact assessment”*
+ - 2016, International Conference on the Sustainable Energy and Environment Development **SEED**, 2016, Krakow, Poland. Poster pt.: *„Impact of a coal-fired CHP plant without flue gas desulfurization (FGD) system on secondary inorganic aerosol formation in air”*
+ - 2016,	V International Conference of Science and Technology **INFRAEKO**: Modern Cities. Infrastructure and Environment, Presentation: *„Modelling of air pollutant dispersion in the street canyon”*
+ - 2016, XIII Konferencja Naukowa POL-EMIS, Powietrze Atmosferyczne Jakość – Zagrożenia-Ochrona, Polska, Szklarska Poręba. *„Zastosowanie systemu modelowania AERMOD w obliczeniach dyspersji zanieczyszczeń powietrza w warunkach polskich”*
+ - 2016, Konferncja naukowa TranSopot 2016 – Wyzwania rozwoju transportu w XXI wieku, Sopot, Prezentacja pt.: *„Ocena jakości powietrza w pobliżu tras komunikacyjnych dla wybranych aglomeracji miejskich Polski”*
+ - 2016,	V Ogólnopolski Kongres Inżynierii Środowiska, Polska, Lublin, Prezentacja pt.: *„Ocena modelu dyspersji zanieczyszczeń powietrza OSPM: studium przypadku, Polska, Kraków”*
+ - 2017,	**ASEE17**: International conference on Advances in energy Systems and Environmental Engineering: clean energy, clean water, clean air, Wroclaw, Poland. Presentation:  *“Assessment of the AERMOD dispersion model over complex terrain with different types of meteorological data: Tracy Power Plant experiment”*
+ - 2017,	International conference **ASSM2017**, Poland, Częstochowa. Presentation: “*Evaluation of opportunities for improvement of OSPM model performance by considering secondary dust emissions from roads”* 
+ - 2019, 3rd International Conference on the Sustainable Energy and Environmental Development **SEED2019**, Poster: *„Assessment of the AERMOD dispersion model in complex terrain with different types of digital elevation data”*
+ - 2022, 10th Scientific Conference Air Protection in Theory and Practice, Poland, Zakopane,  Presentation: *„Particle matter trends (PM10 and PM2.5) from road transport in Krakow: A street canyon case study av. Krasinski”*
+ - 2023, 4th Symposium „Air quality and health”, Poland, University of Wrocław, Presentation: *„Using meteorological normalization to identify the effects of reducing air pollution emissions in Krakow“*
+
+# Reviewer
+
+ - Applied sciences (2)
+ - Atmosphere (5)
+ - Archives of Environmental Protection (1)
+ - Electric power components and systems (1)
+ - Environmental science (2)
+ - Environments (1)
+ - Geomatics and Environmental Engineering (1)
+ - Science of the total environment (3)
+ - Sustainability (2)
+ - Toxics (2)
+ - Urban science (2)
+ - Environmental Sciences Europe (1)
+
+# Teaching and training
+
+Doświadczenie dydaktyczne:
+
+Prowadzę lub prowadziłem zajęcia na 4 kierunkach studiów tj. Inżynierii i Monitoringu Środowiska, Geoinformacji, Informatyce Geoprzestrzenej oraz Inżynierii i Zarządzaniu Procesami Przemysłowymi. \
+
+Inżynieria Środowiska:
+ 
+ - Inżynieria Ochrony Powietrza (P)
+
+ - Technologia Informatyczna (P)
+
+ - Automatyzacja przetwarzania i wizualizacji danych (P)
+
+ - Monitoring Środowiska (P)
+
+ - Fizyka atmosfery z meteorologią i klimatologią (P)
+
+ - GIS w Inżynierii Środowiska (P)
+
+ - Nadzwyczajne Zagrożenia Środowiska (F)
+
+ - Pakiet R w analizie danych środowiskowych (F)
+
+ - Uczenie maszynowe w ochronie powietrza (F)
+
+ - Kształtowanie Stanu Areosanitarnego i Klimatu akustycznego (S)
+
+ - Energetyka Komunalna i Audyt Energetyczny (S)
+
+ - Kontrola Emisji i Ocena Jakości Powietrza (S)
+
+ - Mobilność Niskoemisyjna (S)
+
+ - Zarządzanie Jakością Powietrza (S)
+
+ - Systemy i Techniki Ochrony Atmosfery (S)
+
+ - Oczyszczanie i Monitoring gazów odlotowych (S)
+
+ - Zarządzanie Informacją i Środowisku (S)
+\
+Geoinformacja
+
+ - Skryptowe Przetwarzanie Danych (P)
+
+ - Podstawy Nauk o Ziemi (P)
+
+ - Przetwarzanie danych środowiskowych (P)
+
+ - Metodyka badań i analiz środowiskowych (P)
+
+ - Metody inwentaryzacji i szacowania emisji (F)
+
+ - Wprowadzenie do modelowania dyspersji zanieczyszczeń powietrza (F)
+
+\
+Informatyka Geoprzestrzenna
+
+ - Skryptowe Przetwarzanie Danych (P)
+
+ - Szeregi Czasowe (P)
+
+ - Zdalne Repozytoria i Systemy kontroli Wersji (F)
+
+ - Tworzenie Funkcjonalności Języków Skryptowych (F)
+
+ - Zastosowania Danych Programu Copernicus (F)
+
+ - Uczenie Maszynowe w Inżynierii Środowiska (F)
+
+ - Modelowanie Jakości Powietrza (F)
+
+ - Esploracyjna Analiza Modelu (F)
+
+
+Inne
+
+ - Eksploracja danych (S)
+
+ - Nowoczesny R dla nauki o danych (F) 
+
+ - Zdalne Repozytoria i Systemy kontroli Wersji w projektach Uczenia Maszynowego.
+
+# Others
+
+ - Członek komisji ds. akredytacji wydziału (2016)
+ - Członek komisji ds. egzaminu inżynierskiego (2016 - 2019)
+ - Członek komisji rekrutacyjnej na studia (2016 - 2019).
+ - Członek międzywydziałowego zespołu zespołu AGH dla Środowiska (2020 - 2021)
+ - Ekspert ds. Środowiska w ABAN Sp. z o.o. z siedzibą w Krakowie (2023 - present)
+ - członek wydziałowego zespołu przygotowującego wniosek dla Programu Operacyjnego Wiedza Edukacja Rozwój (POWER-1, 2018)
+ - członek wydziałowego zespołu przygotowującego wniosek dla Programu Operacyjnego Wiedza Edukacja Rozwój (POWER-2, 2019)
+ - członek zespołu kordynującego działania w ramach programu Operacyjnego Wiedza Edukacja Rozwój (2018 - 2021).
+ - realizacja działań z zakresu promocji wydziału (raporty z ankietyzacji, 2023 - present).
+ - opracowanie i przygotowanie wybranych zadań do wniosku o FERS 1 i FERS 2. 
+
+
+
+
