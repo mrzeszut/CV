@@ -1,0 +1,6 @@
+---
+title: "READMD"
+format: gfm
+---
+
+CV opracowano na podstawie przykładu: <https://github.com/schochastics/modern2-cv>
