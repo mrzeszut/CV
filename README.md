@@ -1,4 +1,3 @@
-# READMD
 
-CV opracowano na podstawie przykładu:
-<https://github.com/schochastics/modern2-cv>
+CV based on [example](https://github.com/schochastics/modern2-cv)
+developed by [@schochastics](https://github.com/schochastics)
