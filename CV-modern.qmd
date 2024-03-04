@@ -58,7 +58,7 @@ sidebar:
           text: rzeszut@agh.edu.pl
         - icon: home
           text: my website (polish)
-          href: https://home.agh.edu.pl/~rzeszut
+          href: https://mrzeszut.github.io/personal_website/
         - icon: github
           text: mrzeszut
           href: https://https://github.com/mrzeszut

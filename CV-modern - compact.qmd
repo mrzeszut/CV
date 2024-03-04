@@ -58,7 +58,7 @@ sidebar:
           text: rzeszut@agh.edu.pl
         - icon: home
           text: my website (polish)
-          href: https://home.agh.edu.pl/~rzeszut
+          href: https://mrzeszut.github.io/personal_website/
         - icon: github
           text: mrzeszut
           href: https://https://github.com/mrzeszut
@@ -138,13 +138,13 @@ I am a scientist who wants to learn and discover the processes and phenomena of 
 
 **Major Research Topics:**
 
- - **Parameterization and accuracy assessment of air quality modeling systems** - My research will allow the effective use of these techniques for regulatory purposes.
+-   **Parameterization and accuracy assessment of air quality modeling systems** - My research will allow the effective use of these techniques for regulatory purposes.
 
- - **Analysis of air quality monitoring system data** - I am developing and testing different methods to identify how individual factors determine air quality.
+-   **Analysis of air quality monitoring system data** - I am developing and testing different methods to identify how individual factors determine air quality.
 
- - **Air quality monitoring** - I am working on calibration algorithms for low-cost particulate matter sensors that will be robust to changing locations.
+-   **Air quality monitoring** - I am working on calibration algorithms for low-cost particulate matter sensors that will be robust to changing locations.
 
- - **Creating tools for environmental engineers in R** - In my free time, I create the *"mpsenvi"* package that will perform accuracy assessment, data preparation, modeling, and visualization of results from air quality models.
+-   **Creating tools for environmental engineers in R** - In my free time, I create the *"mpsenvi"* package that will perform accuracy assessment, data preparation, modeling, and visualization of results from air quality models.
 
 # Education
 
@@ -271,33 +271,33 @@ tibble::tribble(
 
 ```
 
-#  R and fortran projects
+# R and fortran projects
 
 I invite you to visit my profile [**mrzeszutek**](https://github.com/mrzeszut) on the GitHub platform. There you can find my current scientific and teaching projects.\
 
- - giosmport - **R package** - Data import package from the air quality monitoring system in Poland.,
-    
- - animeTraj - **R function** - Tutorial on creating trajectory animations from the Hysplit model.
+-   giosmport - **R package** - Data import package from the air quality monitoring system in Poland.,
 
- - Scripted Data Processing - **Course** - A course on effective data processing and basic programming in R - R, Rstudio, Quarto, Tidyverse.
-    
- - Remote Repositories and Version Control Systems for Machine Learning projects - **Course** - Course for the best students of AGH University of Krakow.
-    
- - Fortran - Several data preparation programs for CALMET/CALPUFF (test versions). A simple implementation of the reference methodology for assessing the impact on air quality (Gaussian plume model).
+-   animeTraj - **R function** - Tutorial on creating trajectory animations from the Hysplit model.
+
+-   Scripted Data Processing - **Course** - A course on effective data processing and basic programming in R - R, Rstudio, Quarto, Tidyverse.
+
+-   Remote Repositories and Version Control Systems for Machine Learning projects - **Course** - Course for the best students of AGH University of Krakow.
+
+-   Fortran - Several data preparation programs for CALMET/CALPUFF (test versions). A simple implementation of the reference methodology for assessing the impact on air quality (Gaussian plume model).
 
 # Other projects
 
- - Report for Zinc smelter in a Silesian town, 2021 - 2022, Monitoring size and dynamics of the deposition pollutants in the forest ecosystem in the plant zone. Report no. CI-UR/U/7/2020.
+-   Report for Zinc smelter in a Silesian town, 2021 - 2022, Monitoring size and dynamics of the deposition pollutants in the forest ecosystem in the plant zone. Report no. CI-UR/U/7/2020.
 
- - Report for the Municipal Cleaning Company in Krakow, 2016, Determination of the emission factors of PM10 and PM2.5 dust suspended in the air from selected streets in Krakow. Report no. 5.5.150.370.
+-   Report for the Municipal Cleaning Company in Krakow, 2016, Determination of the emission factors of PM10 and PM2.5 dust suspended in the air from selected streets in Krakow. Report no. 5.5.150.370.
 
- - Report for SGL Carbon Poland, 2014, Preparation of an integrated application permit for SGL Carbon Poland. Report no. 5.5.150.213.
+-   Report for SGL Carbon Poland, 2014, Preparation of an integrated application permit for SGL Carbon Poland. Report no. 5.5.150.213.
 
- - Report for the Office City of Zielona Gora, 09/2023 - 12/2023, Expert opinion on the spread of a cloud of pollution from a fire of hazardous waste stored in a hall in Zielona Gora. Report no. 25.25.150.682. 
+-   Report for the Office City of Zielona Gora, 09/2023 - 12/2023, Expert opinion on the spread of a cloud of pollution from a fire of hazardous waste stored in a hall in Zielona Gora. Report no. 25.25.150.682.
 
- - Report for the Office City of Krakow, 07/2019 - 12/2019, Assessment of the impact of repair activities on air quality in Krakow. Report no. 25.25.150.561. 
+-   Report for the Office City of Krakow, 07/2019 - 12/2019, Assessment of the impact of repair activities on air quality in Krakow. Report no. 25.25.150.561.
 
- - Report for the Office City of Krakow, 07/2019 - 12/2019, Assessment of the effects of improving air quality in Krakow by introducing changes in traffic organization on the example of selected street canyons - preliminary studies. Report no. 25.25.150.571.
+-   Report for the Office City of Krakow, 07/2019 - 12/2019, Assessment of the effects of improving air quality in Krakow by introducing changes in traffic organization on the example of selected street canyons - preliminary studies. Report no. 25.25.150.571.
 
 # Certificated courses and training
 
@@ -389,20 +389,19 @@ You can find a full list of my scientific publications at [**ORCID**](https://or
 
 # Conferences
 
-I participated in 22 national and international scientific conferences. Inter alia: 
- 
-  - International Conference on the Sustainable Energy and Environmental Development **(SEED)**
-  
- - Advances in energy Systems and Environmental Engineering **(ASEE)**
+I participated in 22 national and international scientific conferences. Inter alia:
 
- - Scientific Conference Air Protection in Theory and Practice
-  
- - Central European Conference **(ECOpole)**
- 
- - International Conference of Science and Technology"**(INFRAEKO)**
- 
- - Symposium Air quality and health
- 
+-   International Conference on the Sustainable Energy and Environmental Development **(SEED)**
+
+-   Advances in energy Systems and Environmental Engineering **(ASEE)**
+
+-   Scientific Conference Air Protection in Theory and Practice
+
+-   Central European Conference **(ECOpole)**
+
+-   International Conference of Science and Technology"**(INFRAEKO)**
+
+-   Symposium Air quality and health
 
 # Reviewer
 
@@ -412,13 +411,12 @@ He regularly reviews scientific articles for international scientific journals i
 
 I teach or have taught in 4 academic courses, i.e. Environmental Engineering and Monitoring, Geoinformatics, Geospatial Informatics and Industrial Process Engineering and Management. I have taught more than 25 different courses. I am currently teaching:\
 
- - Air Protection Engineering (P)
- 
- - Scripted Data Processing (P)
- 
- - Time Series (P)
- 
- - Data mining (P)
- 
- - Remote Repositories and Version Control Systems in Machine Learning Projects (P).
- 
+-   Air Protection Engineering (P)
+
+-   Scripted Data Processing (P)
+
+-   Time Series (P)
+
+-   Data mining (P)
+
+-   Remote Repositories and Version Control Systems in Machine Learning Projects (P).
