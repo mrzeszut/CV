@@ -405,7 +405,7 @@ tibble::tribble(
 "",    
     
 "Using remote techniques in teaching",
-"The Centre of e-Learning and Innovative Education at AGH University at AGH University", 
+"The Centre of e-Learning and Innovative Education at AGH University", 
 "21/06/2016 (20h)", 
 "No. CEL/160621/PO481",
     
